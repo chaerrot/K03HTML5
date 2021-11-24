@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>H07Img.html</title>
+</head>
+<body>
+	<h2>img 태그</h2>
+	
+	<h3>이미지를 원본크기대로 표시하기</h3>
+	<img src="./images/1.png" alt="스펀지밥">
+	
+	<h2>이미지 크기설정</h2>
+	<img src="./images/1.png" width="300" alt="스폰지밥" />
+	<img src="./images/2.png" width="100" height="200" alt="징징이" />
+	<img src="./images/2.png" alt="징징이" />
+
+	<h2>이미지에 링크걸기</h2>	
+	<a href="http://koreavc.or.kr/" target="_blank">
+		<img src="./images/logo.png" alt="로고" />
+	</a>
+	
+	<h2>외부에 있는 이미지 가져오기</h2>
+	<a href="http://ikosmo.co.kr/" target="_blank">
+		<img src="http://www.ikosmo.co.kr/images/common/logo_center_v2.jpg" alt="한국직업전문학교" />
+	</a>
+
+
+	<!-- 
+		shape속성에 값을 저장할 때
+			rectangle: rect
+			circle: circ
+			polygon: poly와 같이 줄여서 사용할 수 있다.
+		map의 name속성값과 img의 usemap의 속성값만 일치하면 위치는 어디든
+		상관 없이 선언할 수 있다.
+		- 사각형과 원을 제외한 나머지 모든 도형은 다각형(polygon)으로 표현한다.
+	 -->
+	<h2>이미지맵 사용하기</h2>
+	<img src="./images/Map01.png" alt="이미지맵사용하기" usemap="#MyImage" />
+	<map name="MyImage">
+		<area shape="rectangle" coords="70, 130, 170, 230" href="http://naver.com" alt="네이버">
+		<area shape="circle" coords="246, 182, 58" href="http://daum.net" alt="다음">
+		<area shape="polygon" coords="372,130,309,232,437,232" href="http://nate.com" target="_blank" />
+		<area shape="polygon" coords="498,126,479,168,440,185,500,235,513,190,547,179,508,159" 
+			href="http://google.com" target="_blank" />
+	</map>
+	<!-- Created by Online Image Map Editor (http://www.maschek.hu/imagemap/index) -->	
+	
+
+	
+</body>
+</html>
